@@ -6,7 +6,8 @@ public class Test_Grid2DArray {
 
     @Test
     public void testGrid2ArrayExistance(){
-        Grid2DArray grid = new Grid2DArray(10,10);
+        Grid2DArray grid;
+        grid = new Grid2DArray(10,10);
     }
 
 
