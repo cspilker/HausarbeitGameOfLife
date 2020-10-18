@@ -1,21 +1,24 @@
 package de.nordakademie;
 
 
-public abstract class Grid {
+public abstract class Grid implements IGrid {
 
-    public Grid(){
+    private int width;
+    private int height;
 
+
+    public Grid(int width, int height) {
+        this.width = width;
+        this.height = height;
     }
 
 
-    public int getWidth(){
-
-        return 0;
+    public int getWidth() {
+        return width;
     }
 
 
-    public int getHeight(){
-
-        return 0;
+    public int getHeight() {
+        return height;
     }
 }
