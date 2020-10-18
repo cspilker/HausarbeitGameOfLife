@@ -10,7 +10,6 @@ public class Grid2DArray extends Grid{
         //gridArray[0][0]=true;
 
         for (int i=0; i<aliveCells.length; i++) {
-            System.out.println(i);
             setCellStatus(aliveCells[i][0],aliveCells[i][1], true);
         }
     }
