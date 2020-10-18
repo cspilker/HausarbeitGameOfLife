@@ -9,18 +9,21 @@ public class Test_Grid2DArray {
     @Test
     public void testGrid2ArrayExistance(){
         Grid2DArray grid;
-        grid = new Grid2DArray(10,10);
+        int[][] aliveCells = {};
+        grid = new Grid2DArray(10,10, aliveCells);
     }
 
     @Test
     public void testGetWidth(){
-        IGrid grid = new Grid2DArray(1,2);
+        int[][] aliveCells = {};
+        IGrid grid = new Grid2DArray(1,2, aliveCells);
         assertEquals(1, grid.getWidth());
     }
 
     @Test
     public void testGetHeight(){
-        IGrid grid = new Grid2DArray(1,2);
+        int[][] aliveCells = {};
+        IGrid grid = new Grid2DArray(1,2, aliveCells);
         assertEquals(2,grid.getHeight());
     }
 
