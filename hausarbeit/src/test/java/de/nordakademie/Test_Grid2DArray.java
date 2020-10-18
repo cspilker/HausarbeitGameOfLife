@@ -33,8 +33,8 @@ public class Test_Grid2DArray {
         IGrid grid_isAlive = new Grid2DArray(1,2, cellsIsAlive);
         assertTrue(grid_isAlive.getCellStatus(1,1));
 
-        IGrid grid_isDead = new Grid2DArray(1,2, null);
-        assertFalse(grid_isDead.getCellStatus(1,1));
+        IGrid grid_isDead = new Grid2DArray(1,2, cellsIsAlive);
+        assertFalse(grid_isDead.getCellStatus(1,2));
     }
 
 
