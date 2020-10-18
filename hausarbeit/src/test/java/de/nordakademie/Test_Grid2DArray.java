@@ -37,5 +37,17 @@ public class Test_Grid2DArray {
         assertFalse(grid_isDead.getCellStatus(1,2));
     }
 
+    @Test
+    public void testGetCellStatusArrayBorders(){
+        int[][] cellsIsAlive = {{1,1}, {2,2}};
+        IGrid grid = new Grid2DArray(2,2,cellsIsAlive);
+        assertEquals(null, grid.getCellStatus(0,0));
+        assertEquals(null, grid.getCellStatus(0,2));
+        assertEquals(null, grid.getCellStatus(2,0));
+        assertEquals(null, grid.getCellStatus(2,-1));
+        assertEquals(null, grid.getCellStatus(-2,-2));
+        assertEquals(null, grid.getCellStatus(3,3));
+    }
+
 
 }
