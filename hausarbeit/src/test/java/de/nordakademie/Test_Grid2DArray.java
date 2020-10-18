@@ -14,13 +14,13 @@ public class Test_Grid2DArray {
 
     @Test
     public void testGetWidth(){
-        IGrit grid = new Grid2DArray(1,2);
+        IGrid grid = new Grid2DArray(1,2);
         assertEquals(1, grid.getWidth());
     }
 
     @Test
-    public void testGetHeight(1,2){
-        IGrit grid = new Grid2DArray(1,2);
+    public void testGetHeight(){
+        IGrid grid = new Grid2DArray(1,2);
         assertEquals(2,grid.getHeight());
 
     }
