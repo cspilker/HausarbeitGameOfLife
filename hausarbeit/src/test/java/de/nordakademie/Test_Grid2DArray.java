@@ -22,7 +22,16 @@ public class Test_Grid2DArray {
     public void testGetHeight(){
         IGrid grid = new Grid2DArray(1,2);
         assertEquals(2,grid.getHeight());
+    }
 
+    @Test
+    public void testGetCellStatus(){
+        int[][] cellsIsAlive = {{1,1}};
+        IGrid grid_isAlive = new Grid2DArray(1,2, cellsIsAlive);
+        assertTrue(grid_isAlive.getCellStatus(1,1));
+
+        IGrid grid_isDead = new Grid2DArray(1,2, null);
+        assertFalse(grid_isDead.getCellStatus(1,1));
     }
 
 
